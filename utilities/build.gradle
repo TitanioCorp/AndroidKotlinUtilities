@@ -37,8 +37,7 @@ dependencies {
 }
 
 publish {
-
-    def groupProjectID = 'com.titaniocorp.android.kotlin.utilities'
+    def groupProjectID = 'com.titaniocorp.android.kotlin'
     def artifactProjectID = 'utilities'
     def publishVersionID = '0.1.0'
 
