@@ -1,4 +1,4 @@
-package com.titaniocorp.android.kotlin.resources
+package com.titaniocorp.android.kotlin.utilitiesexample
 
 import androidx.test.platform.app.InstrumentationRegistry
 

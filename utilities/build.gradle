@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -33,4 +34,20 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+publish {
+
+    def groupProjectID = 'com.titaniocorp.android.kotlin.utilities'
+    def artifactProjectID = 'utilities'
+    def publishVersionID = '0.1.0'
+
+    userOrg = 'titaniocorporate'
+    repoName = 'AndroidKotlin'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = "Oh hi, this is a nice description for a project, right?"
+    website = 'https://github.com/TitanioCorp/AndroidKotlinUtilities'
+
 }
